@@ -16,17 +16,18 @@ While building a list of SIFT vectors for clustering, I adjusted the code to ran
 For the best hyper parameter tuning results and when choosing the most accurate model, I obtained an accuracy rate of 63.9% on the test set.
 <br>
 ## Files in the Repository 📚
-*Hyperparameter Tuning*
+***Hyperparameter Tuning***
 
 The full process of choosing all the relevant hyperparameters in the algorithms.
 
-*Function & Packages*
+***Function & Packages***
 
 All the function for activating the project's pipe.
 
-*Main*
+***Main***
 
 Calling the main function of the project.
 
-*Packages and Libraries*
-All required packages and libraries. 
+***Packages and Libraries***
+
+All required packages and libraries.
