@@ -28,32 +28,6 @@ All the function for activating the project's pipe.
 *Main*
 
 Calling the main function of the project.
-<br>
-## Packages and Libraries 📦
-time
 
-os
-
-math
-
-numpy
-
-from matplotlib - pyplot
-
-cv2
-
-sklearn
-
-from os - listdir
-
-from PIL - Image
-
-from random - shuffle
-
-from sklearn.svm - LinearSVC
-
-from sklearn.cluster - KMeans
-
-from sklearn.model_selection - KFold
-
-from sklearn.metrics - accuracy_score; confusion_matrix
+*Packages and Libraries*
+All required packages and libraries. 
