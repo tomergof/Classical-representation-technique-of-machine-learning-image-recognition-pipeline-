@@ -21,6 +21,20 @@ The projects requires installing and importing the foolowing libraries and packa
   from sklearn.metrics import accuracy_score
   from sklearn.metrics import confusion_matrix
   ```
+Go to "Data" folder to find the link for downloading the images.
+
+## Usage 🤔
+To import the data, first download it to your computer. Choose arbitrary 10 indexes (will be used for training the model):
+  ```bash
+  data_path = ""
+  class_indices = [40, 41, 42, 43, 44, 45, 46, 47, 48, 49]
+
+  if __name__ == "__main__":
+      main(data_path, class_indices)
+  ```
+  
+The code above, after changing the data_path variable to the folder on your computer, and changing the class_indices as you wish, will activate the pipeline.
+<br>
 ## Pipeline - Explained In Detail 🕵️‍♀️
 The methodology is to extract 128 dimensional vectors called SIFTs, each one represents a part of an image. Doing so for an entire image for multiple images from different classes, allows us to have a uniform representation of different parts of all the images.
 Later, by training a K-Means model for clustering those SIFT vectors, I am able to represent similar SIFTs (which means similar parts of images) by one unique ‘prototype’.
@@ -35,23 +49,7 @@ While building a list of SIFT vectors for clustering, I adjusted the code to ran
 ## Test Results 🏆
 For the best hyper parameter tuning results and when choosing the most accurate model, I obtained an accuracy rate of 63.9% on the test set.
 <br>
-## Files in the Repository 📚
-***Hyperparameter Tuning***
+In order to examine the most interesting errors in our model, we produced the following confusion matrix:
 
-The full process of choosing all the relevant hyperparameters in the algorithms.
-
-***Function & Packages***
-
-All the function for activating the project's pipe.
-
-***Main***
-
-Calling the main function of the project.
-
-***Packages and Libraries***
-
-All required packages and libraries.
-
-***Data***
-
-Link for downloading the images.
+![image](https://user-images.githubusercontent.com/61631269/123091559-2d655100-d432-11eb-8acb-b9323404688f.png)
+<br>
