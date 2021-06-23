@@ -47,9 +47,10 @@ The ‘main’ function holds ‘hard coded’ tuned hyper-parameters values, an
 While building a list of SIFT vectors for clustering, I adjusted the code to randomly select up to 500 SIFTs from each image. Therefore, when training on about 250 images I had no more than 125,000 vectors for the K-Means model to cluster.
 <br>
 ## Test Results 🏆
-For the best hyper parameter tuning results and when choosing the most accurate model, I obtained an accuracy rate of 63.9% on the test set.
+For the best hyper parameter tuning results and when choosing the most accurate model, **I obtained an accuracy rate of 63.9% on the test set.**
 <br>
 In order to examine the most interesting errors in our model, we produced the following confusion matrix:
 
 ![image](https://user-images.githubusercontent.com/61631269/123091559-2d655100-d432-11eb-8acb-b9323404688f.png)
 <br>
+It’s easy to notice by the dark blue color on the diagonal, that most of the classes are well predicted. Nonetheless, there is a substantial amount of error and in each class. Many images labeled as ‘hedgehog’ were classified as ‘hawksbill’ which are different animals to a human eye, though both are ‘round’ looking, what may explain the error. In addition, I notice from showing the error images that many of the misclassifications occurred in images with messy background and other objects in the image. In order to perform better results on the test class, I think that taking more “clean” images can be useful. In contrast, using same images but with different SIFT extraction method can be useful – extracting SIFTs only from the main part of the image instead of using dense SIFTs extraction.
