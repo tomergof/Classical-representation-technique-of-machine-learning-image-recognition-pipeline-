@@ -31,3 +31,7 @@ Calling the main function of the project.
 ***Packages and Libraries***
 
 All required packages and libraries.
+
+***Data***
+
+Link for downloading the images.
