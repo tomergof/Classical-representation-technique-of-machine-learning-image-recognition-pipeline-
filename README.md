@@ -1,6 +1,25 @@
 # Implementing Machine Learning Image Recognition Pipeline 📷
 In this task I implemented a Sift -> Kmeans -> SVM pipeline, for classifying images between 10 different classes.
 <br>
+
+## Installation 🔗
+The projects requires installing and importing the foolowing libraries and packages:
+  import time
+  import os
+  import math
+  import numpy as np
+  from matplotlib import pyplot as plt
+  import cv2
+  import sklearn
+  from os import listdir
+  from PIL import Image
+  from random import shuffle
+  from sklearn.svm import LinearSVC
+  from sklearn.cluster import KMeans
+  from sklearn.model_selection import KFold
+  from sklearn.metrics import accuracy_score
+  from sklearn.metrics import confusion_matrix
+
 ## Pipeline - Explained In Detail 🕵️‍♀️
 The methodology is to extract 128 dimensional vectors called SIFTs, each one represents a part of an image. Doing so for an entire image for multiple images from different classes, allows us to have a uniform representation of different parts of all the images.
 Later, by training a K-Means model for clustering those SIFT vectors, I am able to represent similar SIFTs (which means similar parts of images) by one unique ‘prototype’.
